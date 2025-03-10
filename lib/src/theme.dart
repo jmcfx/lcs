@@ -23,14 +23,14 @@ class AppTheme {
   // *****************
   // Text Style - Light
   // *****************
-  static final  TextStyle _lightHeadingText = TextStyle(
+  static final TextStyle _lightHeadingText = TextStyle(
     color: _lightTextColorPrimary,
     fontFamily: "Rubik",
     fontSize: 20.sp,
     fontWeight: FontWeight.bold,
   );
 
-  static final  TextStyle _lightBodyText = TextStyle(
+  static final TextStyle _lightBodyText = TextStyle(
     color: _lightTextColorPrimary,
     fontFamily: "Rubik",
     fontStyle: FontStyle.italic,
@@ -38,7 +38,7 @@ class AppTheme {
     fontSize: 16.sp,
   );
 
-  static final  TextTheme _lightTextTheme = TextTheme(
+  static final TextTheme _lightTextTheme = TextTheme(
     displayLarge: _lightHeadingText,
     bodyLarge: _lightBodyText,
   );
@@ -66,11 +66,11 @@ class AppTheme {
     scaffoldBackgroundColor: _lightPrimaryColor,
     appBarTheme: const AppBarTheme(
       backgroundColor:
-          _appbarColorLight, // Use backgroundColor instead of color
+          _appbarColorLight, 
       iconTheme: IconThemeData(color: _iconColor),
     ),
     bottomAppBarTheme: const BottomAppBarTheme(
-      color: _appbarColorLight, // Replaces bottomAppBarColor
+      color: _appbarColorLight, 
     ),
     colorScheme: ColorScheme.light(
       primary: _lightPrimaryColor,
@@ -82,14 +82,14 @@ class AppTheme {
   );
 
   static final ThemeData darkTheme = ThemeData(
-    useMaterial3: true, // Enable Material 3
+    useMaterial3: true, 
     scaffoldBackgroundColor: _darkPrimaryColor,
     appBarTheme: AppBarTheme(
-      backgroundColor: _appbarColorDark, // Use backgroundColor
+      backgroundColor: _appbarColorDark, 
       iconTheme: const IconThemeData(color: _iconColor),
     ),
     bottomAppBarTheme: BottomAppBarTheme(
-      color: _appbarColorDark, // Replaces bottomAppBarColor
+      color: _appbarColorDark, 
     ),
     colorScheme: ColorScheme.dark(
       primary: _darkPrimaryColor,
