@@ -65,12 +65,11 @@ class AppTheme {
     useMaterial3: true, // Enable Material 3
     scaffoldBackgroundColor: _lightPrimaryColor,
     appBarTheme: const AppBarTheme(
-      backgroundColor:
-          _appbarColorLight, 
+      backgroundColor: _appbarColorLight,
       iconTheme: IconThemeData(color: _iconColor),
     ),
     bottomAppBarTheme: const BottomAppBarTheme(
-      color: _appbarColorLight, 
+      color: _appbarColorLight,
     ),
     colorScheme: ColorScheme.light(
       primary: _lightPrimaryColor,
@@ -82,14 +81,14 @@ class AppTheme {
   );
 
   static final ThemeData darkTheme = ThemeData(
-    useMaterial3: true, 
+    useMaterial3: true,
     scaffoldBackgroundColor: _darkPrimaryColor,
     appBarTheme: AppBarTheme(
-      backgroundColor: _appbarColorDark, 
+      backgroundColor: _appbarColorDark,
       iconTheme: const IconThemeData(color: _iconColor),
     ),
     bottomAppBarTheme: BottomAppBarTheme(
-      color: _appbarColorDark, 
+      color: _appbarColorDark,
     ),
     colorScheme: ColorScheme.dark(
       primary: _darkPrimaryColor,
