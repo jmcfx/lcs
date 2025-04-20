@@ -30,7 +30,7 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(
-      designSize: const Size(390, 844),
+      designSize:  const Size(390, 844),
       minTextAdapt: true,
       splitScreenMode: true,
       builder: (_, child) {
@@ -41,7 +41,7 @@ class _MyAppState extends State<MyApp> {
           // themeMode: MediaQuery.platformBrightnessOf(context) == Brightness.dark? ThemeMode.dark: ThemeMode.light,
           theme: AppTheme.lightTheme,
           darkTheme: AppTheme.darkTheme,
-          home: const AdvicePage(),
+          home: const AdvicePageWrapperProvider(),
         );
       },
     );

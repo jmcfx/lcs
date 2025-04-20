@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:lcs_app/src/features/advice/presentation/bloc/advice_bloc.dart';
+import 'package:provider/provider.dart';
 
 class CustomButton extends StatelessWidget {
   const CustomButton({super.key});
@@ -7,8 +9,9 @@ class CustomButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final themeData = Theme.of(context);
-    return InkResponse(
-      onTap: () {},
+    return GestureDetector(
+      onTap: () =>
+          context.read<AdviceBloc>().add(const AdviceEvent.adviceRequested()),
       child: Material(
         borderRadius: BorderRadius.circular(10.r),
         elevation: 5.r,

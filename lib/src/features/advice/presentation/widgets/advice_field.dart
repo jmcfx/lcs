@@ -11,12 +11,11 @@ class AdviceField extends StatelessWidget {
     return Material(
       elevation: 5.r,
       borderRadius: BorderRadius.circular(15.r),
+      color: themeData.colorScheme.onPrimary,
       child: Container(
-       padding: EdgeInsets.symmetric(
-        horizontal: 15.r , vertical: 15.r
-       ),
+        padding: EdgeInsets.symmetric(horizontal: 15.r, vertical: 15.r),
         child: Text(
-          advice,
+          '''"$advice"''',
           style: themeData.textTheme.bodyLarge,
           textAlign: TextAlign.center,
         ),

@@ -9,7 +9,7 @@ class ThemeService extends ChangeNotifier {
 
   Future<void> initializeTheme() async {
     final prefs = await SharedPreferences.getInstance();
-  final savedMode = prefs.getString(_themePrefKey) ?? 'system';
+    final savedMode = prefs.getString(_themePrefKey) ?? 'system';
 
     _themeMode = (savedMode == 'light')
         ? ThemeMode.light
@@ -32,8 +32,10 @@ class ThemeService extends ChangeNotifier {
 
   void toggleTheme(bool isDark) {
     final newTheme = isDark ? ThemeMode.dark : ThemeMode.light;
-    if (_themeMode != newTheme) _themeMode = newTheme;
 
+    if (_themeMode == newTheme) return; // Prevents unnecessary updates
+
+    _themeMode = newTheme;
     _saveThemePreference();
     notifyListeners();
   }
